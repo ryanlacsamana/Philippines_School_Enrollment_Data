@@ -8,5 +8,9 @@ The dataset contains the following columns:
   -------|--------|
   item_no | row number that serves as primary key |
   sector | sector from which the data is obtained (public, private, suc-luc)|
-  Academic_Year | the customary annual period of classes |
+  Academic_Year | the customary annual period of classes (SY YYYY-YYYY)|
+  AY_Start | start of Academic_Year (YYYY)|
+  AY_End | end of Academic_Year (YYYY)|
+  Region | region corresponding to each administrative region in the Philippines|
+  Grade columns | columns corresponding to each stages of education in the Philippines (from Kindergarten to Grade 12)|
 
