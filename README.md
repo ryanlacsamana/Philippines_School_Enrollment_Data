@@ -23,20 +23,20 @@ The dataset contains the following columns:
   Grade_8 | column corresponding to Grade 8 number of enrollees|
   Grade_9 | column corresponding to Grade 9 number of enrollees|
   Grade_10 | column corresponding to Grade 10 number of enrollees|
-  Grade_11 ABM | column correponding to Grade 11 number of enrollees for ABM strand|
-  Grade_11 HUMSS | column correponding to Grade 11 number of enrollees for HUMSS strand|
-  Grade_11 STEM | column correponding to Grade 11 number of enrollees for STEM strand|
-  Grade_11 GAS | column correponding to Grade 11 number of enrollees for GAS strand|
-  Grade_11 MARITIME | column correponding to Grade 11 number of enrollees for MARITIME strand|
-  Grade_11 TVL | column correponding to Grade 11 number of enrollees for TVL strand|
-  Grade_11 AD | column correponding to Grade 11 number of enrollees for A&D strand|
-  Grade_12 ABM | column correponding to Grade 12 number of enrollees for ABM strand|
-  Grade_12 HUMSS | column correponding to Grade 12 number of enrollees for HUMSS strand|
-  Grade_12 STEM | column correponding to Grade 12 number of enrollees for STEM strand|
-  Grade_12 GAS | column correponding to Grade 12 number of enrollees for GAS strand|
-  Grade_12 MARITIME | column correponding to Grade 12 number of enrollees for MARITIME strand|
-  Grade_12 TVL | column correponding to Grade 12 number of enrollees for TVL strand|
-  Grade_12 AD | column correponding to Grade 12 number of enrollees for A&D strand|
+  Grade_11_ABM | column correponding to Grade 11 number of enrollees for ABM strand|
+  Grade_11_HUMSS | column correponding to Grade 11 number of enrollees for HUMSS strand|
+  Grade_11_STEM | column correponding to Grade 11 number of enrollees for STEM strand|
+  Grade_11_GAS | column correponding to Grade 11 number of enrollees for GAS strand|
+  Grade_11_MARITIME | column correponding to Grade 11 number of enrollees for MARITIME strand|
+  Grade_11_TVL | column correponding to Grade 11 number of enrollees for TVL strand|
+  Grade_11_AD | column correponding to Grade 11 number of enrollees for A&D strand|
+  Grade_12_ABM | column correponding to Grade 12 number of enrollees for ABM strand|
+  Grade_12_HUMSS | column correponding to Grade 12 number of enrollees for HUMSS strand|
+  Grade_12_STEM | column correponding to Grade 12 number of enrollees for STEM strand|
+  Grade_12_GAS | column correponding to Grade 12 number of enrollees for GAS strand|
+  Grade_12_MARITIME | column correponding to Grade 12 number of enrollees for MARITIME strand|
+  Grade_12_TVL | column correponding to Grade 12 number of enrollees for TVL strand|
+  Grade_12_AD | column correponding to Grade 12 number of enrollees for A&D strand|
 
 To start, the dataset has been explored and cleaned. The dataset contains values that conflicts with the MySQL syntax. The [command](https://github.com/ryanlacsamana/Philippines_School_Enrollment_Data/blob/main/change-column-names.sql) below is used to clean the dataset.
 
@@ -78,3 +78,36 @@ CHANGE COLUMN `Grade_12_A&D` `Grade_12_AD` INT NULL DEFAULT NULL;
 SELECT *
 FROM dbenrollment.phschoolenrollment
 ```
+
+We will create new tables that will separate the 3 academic levels, **Elementary**, **Junior High School**, **Senior High School**.
+
+To create the table containing number of enrollees from Elementary Students:
+```
+CREATE TABLE ph_elem_enrollment AS
+	SELECT item_no, sector, Academic_Year, Region, Kindergarten, Grade_1, Grade_2, Grade_3, Grade_4, Grade_5, Grade_6
+    FROM phschoolenrollment;
+    
+SELECT * FROM ph_elem_enrollment
+```
+To create the table containing number of enrollees from Junior High School Students:
+```
+CREATE TABLE ph_jhs_enrollment AS
+	SELECT item_no, sector, Academic_Year, region, Grade_7, Grade_8, Grade_9, Grade_10
+    FROM phschoolenrollment
+    
+SELECT * FROM ph_jhs_enrollment
+```
+To create the table containing number of enrollees from Senior High School Students:
+```
+/* Create a table for SHS enrollment, where Academic Year starts in 2016 onwards */
+CREATE TABLE ph_shs_enrollment AS
+	SELECT item_no, sector, Academic_Year, Region, Grade_11_ABM, Grade_11_HUMSS, Grade_11_STEM, Grade_11_GAS, Grade_11_MARITIME, Grade_11_TVL, Grade_11_SPORTS, Grade_11_AD, Grade_12_ABM, Grade_12_HUMSS, Grade_12_STEM, Grade_12_GAS, Grade_12_MARITIME, Grade_12_TVL, Grade_12_SPORTS, Grade_12_AD
+    FROM phschoolenrollment
+    WHERE 
+    AY_Start >= 2016
+    
+SELECT *
+FROM ph_shs_enrollment
+```
+The data has been filtered to only show enrollment data from 2016 up to 2021. This is because K-to-12 has not been implemented before that academic year. The K-to-12 introduced Grade 11 and Grade 12 and the different strands.
+
