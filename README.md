@@ -12,14 +12,28 @@ The dataset contains the following columns:
   AY_Start | start of Academic_Year (YYYY)|
   AY_End | end of Academic_Year (YYYY)|
   Region | region corresponding to each administrative region in the Philippines|
-  Kindergarten | column corresponding to Kindergarten stage of education|
-  Grade 1 | column corresponding to Grade 1 stage of education|
-  Grade 2 | column corresponding to Grade 2 stage of education|
-  Grade 3 | column corresponding to Grade 3 stage of education|
-  Grade 4 | column corresponding to Grade 4 stage of education|
-  Grade 5 | column corresponding to Grade 5 stage of education|
-  Grade 6 | column corresponding to Grade 6 stage of education|
-  Grade 7 | column corresponding to Grade 7 stage of education|
-  Grade 8 | column corresponding to Grade 8 stage of education|
-  Grade 9 | column corresponding to Grade 9 stage of education|
-  Grade 10 | column corresponding to Grade 10 stage of education|
+  Kindergarten | column corresponding to Kindergarten number of enrollees|
+  Grade_1 | column corresponding to Grade 1 number of enrollees|
+  Grade_2 | column corresponding to Grade 2 number of enrollees|
+  Grade_3 | column corresponding to Grade 3 number of enrollees|
+  Grade_4 | column corresponding to Grade 4 number of enrollees|
+  Grade_5 | column corresponding to Grade 5 number of enrollees|
+  Grade_6 | column corresponding to Grade 6 number of enrollees|
+  Grade_7 | column corresponding to Grade 7 number of enrollees|
+  Grade_8 | column corresponding to Grade 8 number of enrollees|
+  Grade_9 | column corresponding to Grade 9 number of enrollees|
+  Grade_10 | column corresponding to Grade 10 number of enrollees|
+  Grade_11 ABM | column correponding to Grade 11 number of enrollees for ABM strand|
+  Grade_11 HUMSS | column correponding to Grade 11 number of enrollees for HUMSS strand|
+  Grade_11 STEM | column correponding to Grade 11 number of enrollees for STEM strand|
+  Grade_11 GAS | column correponding to Grade 11 number of enrollees for GAS strand|
+  Grade_11 MARITIME | column correponding to Grade 11 number of enrollees for MARITIME strand|
+  Grade_11 TVL | column correponding to Grade 11 number of enrollees for TVL strand|
+  Grade_11 AD | column correponding to Grade 11 number of enrollees for A&D strand|
+  Grade_12 ABM | column correponding to Grade 12 number of enrollees for ABM strand|
+  Grade_12 HUMSS | column correponding to Grade 12 number of enrollees for HUMSS strand|
+  Grade_12 STEM | column correponding to Grade 12 number of enrollees for STEM strand|
+  Grade_12 GAS | column correponding to Grade 12 number of enrollees for GAS strand|
+  Grade_12 MARITIME | column correponding to Grade 12 number of enrollees for MARITIME strand|
+  Grade_12 TVL | column correponding to Grade 12 number of enrollees for TVL strand|
+  Grade_12 AD | column correponding to Grade 12 number of enrollees for A&D strand|
