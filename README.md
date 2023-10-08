@@ -12,5 +12,14 @@ The dataset contains the following columns:
   AY_Start | start of Academic_Year (YYYY)|
   AY_End | end of Academic_Year (YYYY)|
   Region | region corresponding to each administrative region in the Philippines|
-  Grade columns | columns corresponding to each stages of education in the Philippines (from Kindergarten to Grade 12)|
-
+  Kindergarten | column corresponding to Kindergarten stage of education|
+  Grade 1 | column corresponding to Grade 1 stage of education|
+  Grade 2 | column corresponding to Grade 2 stage of education|
+  Grade 3 | column corresponding to Grade 3 stage of education|
+  Grade 4 | column corresponding to Grade 4 stage of education|
+  Grade 5 | column corresponding to Grade 5 stage of education|
+  Grade 6 | column corresponding to Grade 6 stage of education|
+  Grade 7 | column corresponding to Grade 7 stage of education|
+  Grade 8 | column corresponding to Grade 8 stage of education|
+  Grade 9 | column corresponding to Grade 9 stage of education|
+  Grade 10 | column corresponding to Grade 10 stage of education|
