@@ -81,7 +81,8 @@ FROM dbenrollment.phschoolenrollment
 
 We will create new tables that will separate the 3 academic levels, **Elementary**, **Junior High School**, **Senior High School**.
 
-To create the table containing number of enrollees from Elementary Students:
+**To create the table containing number of enrollees from Elementary Students:**
+
 ```
 CREATE TABLE ph_elem_enrollment AS
 	SELECT item_no, sector, Academic_Year, Region, Kindergarten, Grade_1, Grade_2, Grade_3, Grade_4, Grade_5, Grade_6
@@ -89,7 +90,9 @@ CREATE TABLE ph_elem_enrollment AS
     
 SELECT * FROM ph_elem_enrollment
 ```
-To create the table containing number of enrollees from Junior High School Students:
+
+**To create the table containing number of enrollees from Junior High School Students:**
+
 ```
 CREATE TABLE ph_jhs_enrollment AS
 	SELECT item_no, sector, Academic_Year, region, Grade_7, Grade_8, Grade_9, Grade_10
@@ -97,7 +100,9 @@ CREATE TABLE ph_jhs_enrollment AS
     
 SELECT * FROM ph_jhs_enrollment
 ```
-To create the table containing number of enrollees from Senior High School Students:
+
+**To create the table containing number of enrollees from Senior High School Students:**
+
 ```
 /* Create a table for SHS enrollment, where Academic Year starts in 2016 onwards */
 CREATE TABLE ph_shs_enrollment AS
@@ -109,5 +114,31 @@ CREATE TABLE ph_shs_enrollment AS
 SELECT *
 FROM ph_shs_enrollment
 ```
-The data has been filtered to only show enrollment data from 2016 up to 2021. This is because K-to-12 has not been implemented before that academic year. The K-to-12 introduced Grade 11 and Grade 12 and the different strands.
+_The data has been filtered to only show enrollment data from 2016 up to 2021. This is because K-to-12 has not been implemented before that academic year. The K-to-12 introduced Grade 11 and Grade 12 and the different strands._
+
+**To create the table containing sum of enrollees per strand:**
+
+```
+CREATE TABLE ph_shs_strand AS (
+	SELECT Academic_Year, sector,
+		SUM(Grade_11_ABM) AS G11_ABM,
+		SUM(Grade_11_AD) AS G11_AD,
+		SUM(Grade_11_GAS) AS G11_GAS,
+		SUM(Grade_11_HUMSS) AS G11_HUMSS,
+		SUM(Grade_11_MARITIME) AS G11_MARITIME,
+		SUM(Grade_11_SPORTS) AS G11_SPORTS,
+		SUM(Grade_11_STEM) AS G11_STEM,
+		SUM(Grade_11_TVL) AS G11_TVL,
+		SUM(Grade_12_ABM) AS G12_ABM,
+		SUM(Grade_12_AD) AS G12_AD,
+		SUM(Grade_12_GAS) AS G12_GAS,
+		SUM(Grade_12_HUMSS) AS G12_HUMSS,
+		SUM(Grade_12_MARITIME) AS G12_MARITIME,
+		SUM(Grade_12_SPORTS) AS G12_SPORTS,
+		SUM(Grade_12_STEM) AS G12_STEM,
+		SUM(Grade_12_TVL) AS G12_TVL
+	FROM ph_shs_enrollment
+	GROUP BY `Academic_Year`,`sector`
+    );
+```
 
