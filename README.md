@@ -144,3 +144,16 @@ CREATE TABLE ph_shs_strand AS (
     );
 ```
 
+### Data Visualization
+
+Visualize the number of enrollees per section from SY 2010-2011 to SY 2020-2021
+
+![No  of Enrollees - Total](https://github.com/ryanlacsamana/Philippines_School_Enrollment_Data/assets/138304188/6b0bd719-eadc-4208-ae7a-9130d8a6f199)
+
+The graph shows that enrollment in Public Schools are highest for all academic years. All sector have shown a noticeable increase in enrollment for SY 2016-2017. This could be due to the implementation of Senior High School as part to K-to-12 system. This means that the increase in enrollment could be due to the additional academic level and the students that are enrolling for Senior High School.
+
+Visualize the number of enrollees per region
+
+![No  of Enrollees per Region](https://github.com/ryanlacsamana/Philippines_School_Enrollment_Data/assets/138304188/e88e9f1e-61f5-4b37-8080-bd791d2e6ead)
+
+From the chart above, the number of enrollees is higher for Region IV-A - CALABARZON, which is higher than the number of enrollees in National Capital Region (NCR). This is true for all the number of enrollments observed from SY 2010-2011 to SY 2020-2021.
