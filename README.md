@@ -177,3 +177,7 @@ MARITIME | Maritime |
 SPORTS | Sports Track |
 STEM | Science, Technology, Engineering, and Mathematics |
 TVL | Technical-Vocation-Livelihood |
+
+![Enrollment per Strand (Comparison)](https://github.com/ryanlacsamana/Philippines_School_Enrollment_Data/assets/138304188/bd64d0a6-a4dd-47ef-94ed-92bce229c12c)
+
+Since the start of Senior High School level in SY 2016-2017, 5 strands have obtained considerable number of enrollees compared to the other strands. These strands are, TVL, GAS, STEM, ABM, and HUMSS. Based on the graph, it is noticeable that the enrollment for HUMSS strand have a steady increase each year. From the 5th most enrolled enrolled strand, HUMSS climbed up as the 2nd most enrolled strand for SY 2020-2021.
