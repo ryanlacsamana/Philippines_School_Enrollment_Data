@@ -1,0 +1,24 @@
+CREATE TABLE ph_shs_strand AS (
+	SELECT Academic_Year, sector,
+		SUM(Grade_11_ABM) AS G11_ABM,
+		SUM(Grade_11_AD) AS G11_AD,
+		SUM(Grade_11_GAS) AS G11_GAS,
+		SUM(Grade_11_HUMSS) AS G11_HUMSS,
+		SUM(Grade_11_MARITIME) AS G11_MARITIME,
+		SUM(Grade_11_SPORTS) AS G11_SPORTS,
+		SUM(Grade_11_STEM) AS G11_STEM,
+		SUM(Grade_11_TVL) AS G11_TVL,
+		SUM(Grade_12_ABM) AS G12_ABM,
+		SUM(Grade_12_AD) AS G12_AD,
+		SUM(Grade_12_GAS) AS G12_GAS,
+		SUM(Grade_12_HUMSS) AS G12_HUMSS,
+		SUM(Grade_12_MARITIME) AS G12_MARITIME,
+		SUM(Grade_12_SPORTS) AS G12_SPORTS,
+		SUM(Grade_12_STEM) AS G12_STEM,
+		SUM(Grade_12_TVL) AS G12_TVL
+	FROM ph_shs_enrollment
+	GROUP BY `Academic_Year`,`sector`
+    );
+
+SELECT *
+FROM ph_shs_strand;
