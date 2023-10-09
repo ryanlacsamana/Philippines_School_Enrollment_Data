@@ -167,6 +167,7 @@ Visualize the number of enrollees per strand
 
 As part of the implementation of K-to-12 system, Senior High School level has been established for SY 2016-2017. The Senior High School level has 8 strands:
 
-|-----|-----|
+Acronym | Strand Name |
+-----|-----|
 A&D | Arts and Design|
 ABM | Accountancy, Business and Management |
