@@ -190,4 +190,8 @@ Now, let us compare the number of enrollment on each strand for different sector
 
 The total number of enrollees for GAS, HUMSS, SPORT, and TVL strands are higher in Public Schools, while total number enrollees is higher in Private Schols for ABM, MARITIME, and STEM strand. Total number of enrollees for the A&D strand is just slight higher for Public Schools with a small margin of 823 enrollees. The higher number of enrollees in Private Schools could be attributed to some Private Schools having specialized methods of teaching and good reputation for certain courses.
 
+### Insights
 
+1. Total number of enrollees is significantly higher on Public Schools for all academic years. This could be due to the lower tuition fee compared to Private Schools.
+2. The low number of enrollees for the SUC and LUC sector is due to a few number of State/Local Universities and Colleges that offer elementary and secondary education.
+3. The number of enrollees for a certain strand could depend on the number of schools that offers it or if a sector has specialized methods and reputation for that strand.
