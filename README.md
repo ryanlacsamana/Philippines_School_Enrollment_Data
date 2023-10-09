@@ -38,6 +38,8 @@ The dataset contains the following columns:
   Grade_12_TVL | column correponding to Grade 12 number of enrollees for TVL strand|
   Grade_12_AD | column correponding to Grade 12 number of enrollees for A&D strand|
 
+### Data Exploration and Data Cleaning
+
 To start, the dataset has been explored and cleaned. The dataset contains values that conflicts with the MySQL syntax. The [command](https://github.com/ryanlacsamana/Philippines_School_Enrollment_Data/blob/main/change-column-names.sql) below is used to clean the dataset.
 
   ```
