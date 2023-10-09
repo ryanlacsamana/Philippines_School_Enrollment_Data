@@ -171,3 +171,9 @@ Acronym | Strand Name |
 -----|-----|
 A&D | Arts and Design|
 ABM | Accountancy, Business and Management |
+GAS | General Academic Strand |
+HUMSS | Humanities and Social Sciences |
+MARITIME | Maritime |
+SPORTS | Sports Track |
+STEM | Science, Technology, Engineering, and Mathematics |
+TVL | Technical-Vocation-Livelihood |
