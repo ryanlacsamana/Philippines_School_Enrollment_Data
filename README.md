@@ -146,6 +146,8 @@ CREATE TABLE ph_shs_strand AS (
 
 ### Data Visualization
 
+[Tableau Dashboard](https://public.tableau.com/app/profile/paul.ryan.lacsamana/viz/PhilippinesSchoolEnrollmentDataSY2010-2011toSY2020-2021/PhilippinesSchoolEnrollmentData)
+
 Visualize the number of enrollees per section from SY 2010-2011 to SY 2020-2021
 
 ![No  of Enrollees - Total](https://github.com/ryanlacsamana/Philippines_School_Enrollment_Data/assets/138304188/6b0bd719-eadc-4208-ae7a-9130d8a6f199)
