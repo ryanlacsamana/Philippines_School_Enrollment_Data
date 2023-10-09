@@ -183,3 +183,11 @@ TVL | Technical-Vocation-Livelihood |
 Since the start of Senior High School level in SY 2016-2017, 5 strands have obtained considerable number of enrollees compared to the other strands. These strands are, TVL, GAS, STEM, ABM, and HUMSS. 
 
 Based on the graph, it is noticeable that the enrollment for HUMSS strand have a steady increase each year. From the 5th most enrolled enrolled strand, HUMSS climbed up as the 2nd most enrolled strand for SY 2020-2021. The increase could be attributed to the salary hike for police and military, which are jobs and courses that can be taken after the HUMSS strand.
+
+Now, let us compare the number of enrollment on each strand for different sectors.
+
+![Enrollments per Strand](https://github.com/ryanlacsamana/Philippines_School_Enrollment_Data/assets/138304188/a3b45a74-5060-4ae3-aadf-d352b0b88efb)
+
+The total number of enrollees for GAS, HUMSS, SPORT, and TVL strands are higher in Public Schools, while total number enrollees is higher in Private Schols for ABM, MARITIME, and STEM strand. Total number of enrollees for the A&D strand is just slight higher for Public Schools with a small margin of 823 enrollees. The higher number of enrollees in Private Schools could be attributed to some Private Schools having specialized methods of teaching and good reputation for certain courses.
+
+
